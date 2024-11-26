@@ -19,7 +19,7 @@ const Games = ({channel,setchannel}) => {
   return (
     <div className='gameContainer'>
       <Board result={result} setResult={setResult}/>    
-      <Window><MessageList hideDeletedMessages disableDateSeparator  
+      <Window><MessageList hideDeletedMessages closeReactionSelectorOnClick disableDateSeparator  
      messageActions={["react","edit","delete"]}/>
       <MessageInput/></Window>
 
